@@ -98,7 +98,7 @@ public class login {
          
             p.setBackground(Color.red);
             b1= new JButton("EXIT");
-             f=new  JFrame("login Page");
+             f=new  JFrame("Registration form");
             f.setVisible(true);
             f.setSize(600,400);
             f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
