@@ -1,0 +1,148 @@
+package reception;
+
+import javax.swing.*;
+import java.awt.*;
+ import java.awt.FlowLayout;
+
+public class Reception {
+    private JFrame f;
+    private JPanel p;
+    private JButton b1;
+    private JButton b2;
+    private JLabel l1;
+    private JLabel l2;
+    private JTextField t1;
+    private JTextField t2;
+     
+    
+    public Reception()
+    { 
+        gui();
+        
+    }
+    public final void gui()
+    {
+            f=new  JFrame("login Page");
+            f.setVisible(true);
+            f.setSize(600,400);
+            f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+           
+            p= new JPanel(new FlowLayout());
+         
+            p.setBackground(Color.cyan);
+            b1= new JButton("EXIT");
+           
+             b2= new JButton("LOGIN");
+             l1= new JLabel("USERNAME");
+             l2=new JLabel("PASSWORD");
+             t1= new JTextField (10); 
+             t2= new JTextField(10);
+             p.add(b1);
+             p.add(b2);
+             p.add(l1);
+             p.add(l2);
+             p.add(t1);
+             p.add(t2);
+             
+             f.add(p);
+             
+             
+            }
+    
+
+        public static void main(String[] args) {
+            
+           new Reception ();
+           
+            
+
+    }
+    
+}
+
+//adding user form
+import javax.swing.*;
+import java.awt.*;
+
+
+public class login {
+     private JFrame f;
+    private JPanel p;
+    private JButton b1;
+    private JButton b2;
+    private JLabel l1;
+    private JLabel l2;
+    private JLabel l3;
+    private JLabel l4;
+    private JLabel l5;
+    private JTextField t1;
+    private JTextField t2;
+    private JTextField t3;
+    private JTextField t4;
+    private JTextField t5;
+    
+    public login()
+            
+    { 
+        gui();
+        
+    }
+    public final void gui()
+    {
+            f=new  JFrame("Registration form");
+            f.setVisible(true);
+            f.setSize(600,400);
+            f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+           
+            p= new JPanel(new FlowLayout());
+         
+            p.setBackground(Color.red);
+            b1= new JButton("EXIT");
+             f=new  JFrame("login Page");
+            f.setVisible(true);
+            f.setSize(600,400);
+            f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+           
+            p= new JPanel(new FlowLayout());
+         
+            p.setBackground(Color.cyan);
+            b1= new JButton("EXIT");
+            b2= new JButton("SAVE");
+             l1= new JLabel("FIRST NAME");
+             l2=new JLabel("LAST NAME");
+             l3=new JLabel("TELEPHONE");
+             l4=new JLabel("DATE OF BIRTH");
+             l5=new JLabel("GENDER");
+                         
+             t1= new JTextField (10); 
+             t2= new JTextField(10);
+             t3= new JTextField (10);
+             t4= new JTextField (10); 
+             t5= new JTextField (10); 
+             
+             p.add(b1);
+             p.add(b2);
+             p.add(l1);
+             p.add(l2);
+             p.add(l3);
+             p.add(l4);
+             p.add(l5);
+             p.add(t1);
+             p.add(t2);
+             p.add(t3);
+             p.add(t4);
+             p.add(t5);
+             
+             
+             
+             f.add(p);
+             
+             
+            }
+    
+
+        public static void main(String[]args){ 
+            new login();
+        }
+    
+}
